@@ -46,7 +46,7 @@ __Returns__
 
 Name|Details
 ----|:------
-networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+requestId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
 
 ---
 
@@ -70,7 +70,7 @@ __Returns__
 
 Name|Details
 ----|:------
-networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+requestId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
 
 ---
 
@@ -94,7 +94,7 @@ __Returns__
 
 Name|Details
 ----|:------
-networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+requestId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
 
 ### .delete
 
@@ -117,7 +117,7 @@ __Returns__
 
 Name|Details
 ----|:------
-networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+requestId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
 
 ---
 
@@ -140,4 +140,4 @@ __Returns__
 
 Name|Details
 ----|:------
-networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+requestId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).

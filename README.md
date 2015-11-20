@@ -1,6 +1,6 @@
 # mod_requester
 
-A simple wrapper for Corona SDKs network.request method.
+A simple wrapper for Corona SDKs [network.request](https://docs.coronalabs.com/api/library/network/request.html) method.
 
 ## Usage
 
@@ -21,7 +21,7 @@ req.get( '/some/path', function( evt )
 end)
 ```
 
-the callback event (`evt`) is the same as the one from `network.request`
+the callback event (`evt`) is the same one used in `network.request` from the Corona SDK API.
 
 ___The `host` and `port` parameters will stay set until they are updated with new values.___
 

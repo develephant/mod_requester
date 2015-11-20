@@ -38,7 +38,13 @@ req.get( '/some/path', callback )
 Parameter|Details
 ---------|-------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
-callback|The method that is called when the request returns. The `evt` is the standard Corona SDK network event object.
+callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
+
+__Returns__
+
+Parameter|Details
+---------|-------
+networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
 
 ### .post
 
@@ -52,7 +58,7 @@ Parameter|Details
 ---------|-------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
 post_body|The textual data to post. Convert tables to JSON.
-callback|The method that is called when the request returns. The `evt` is the standard Corona SDK network event object.
+callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
 
 ### .put
 
@@ -66,7 +72,7 @@ Parameter|Details
 ---------|-------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
 put_body|The textual data to put. Convert tables to JSON.
-callback|The method that is called when the request returns. The `evt` is the standard Corona SDK network event object.
+callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
 
 ### .delete
 
@@ -79,7 +85,7 @@ req.put( '/some/path', callback )
 Parameter|Details
 ---------|-------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
-callback|The method that is called when the request returns. The `evt` is the standard Corona SDK network event object.
+callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
 
 ### .head
 
@@ -92,4 +98,4 @@ req.head( '/some/path', callback )
 Parameter|Details
 ---------|-------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
-callback|The method that is called when the request returns. The `evt` is the standard Corona SDK network event object.
+callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).

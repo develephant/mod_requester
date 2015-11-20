@@ -14,7 +14,7 @@ local req = require( 'mod_requester' )
 req.host = '123.123.123.123'
 req.port = 8081
 
-req.get( '/some/path', function( evt )
+req.get( '/some/uri/path', function( evt )
   if evt.isError then
     print 'network error!'
   end
@@ -32,7 +32,7 @@ ___The `host` and `port` parameters will stay set until they are updated with ne
 Wraps a GET request.
 
 ```lua
-req.get( '/some/path', callback )
+req.get( '/some/uri/path', callback )
 ```
 
 __Parameters__
@@ -55,7 +55,7 @@ requestId|The request identifier. This can be used with [network.cancel( request
 Wraps a POST request.
 
 ```lua
-req.post( '/some/path', post_body, callback )
+req.post( '/some/uri/path', post_body, callback )
 ```
 
 __Parameters__
@@ -79,7 +79,7 @@ requestId|The request identifier. This can be used with [network.cancel( request
 Wraps a PUT request.
 
 ```lua
-req.put( '/some/path', put_body, callback )
+req.put( '/some/uri/path', put_body, callback )
 ```
 
 __Parameters__
@@ -103,7 +103,7 @@ requestId|The request identifier. This can be used with [network.cancel( request
 Wraps a DELETE request.
 
 ```lua
-req.put( '/some/path', callback )
+req.put( '/some/uri/path', callback )
 ```
 
 __Parameters__
@@ -126,7 +126,7 @@ requestId|The request identifier. This can be used with [network.cancel( request
 Wraps a HEAD request.
 
 ```lua
-req.head( '/some/path', callback )
+req.head( '/some/uri/path', callback )
 ```
 
 __Parameters__

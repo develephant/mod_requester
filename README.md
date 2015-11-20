@@ -16,7 +16,7 @@ req.port = 8081
 
 req.get( '/some/path', function( evt )
   if evt.isError then
-    print 'nwetwork error!'
+    print 'network error!'
   end
 end)
 ```

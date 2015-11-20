@@ -35,16 +35,20 @@ Wraps a GET request.
 req.get( '/some/path', callback )
 ```
 
-Parameter|Details
----------|-------
+__Parameters__
+
+Name|Details
+----|:------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
 callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
 
 __Returns__
 
-Parameter|Details
----------|-------
+Name|Details
+----|:------
 networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+
+---
 
 ### .post
 
@@ -54,11 +58,21 @@ Wraps a POST request.
 req.post( '/some/path', post_body, callback )
 ```
 
-Parameter|Details
----------|-------
+__Parameters__
+
+Name|Details
+----|:------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
 post_body|The textual data to post. Convert tables to JSON.
 callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
+
+__Returns__
+
+Name|Details
+----|:------
+networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+
+---
 
 ### .put
 
@@ -68,13 +82,23 @@ Wraps a PUT request.
 req.put( '/some/path', put_body, callback )
 ```
 
-Parameter|Details
----------|-------
+__Parameters__
+
+Name|Details
+----|:------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
 put_body|The textual data to put. Convert tables to JSON.
 callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
 
+__Returns__
+
+Name|Details
+----|:------
+networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+
 ### .delete
+
+---
 
 Wraps a DELETE request.
 
@@ -82,10 +106,20 @@ Wraps a DELETE request.
 req.put( '/some/path', callback )
 ```
 
-Parameter|Details
----------|-------
+__Parameters__
+
+Name|Details
+----|:------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
 callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
+
+__Returns__
+
+Name|Details
+----|:------
+networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
+
+---
 
 ### .head
 
@@ -95,7 +129,15 @@ Wraps a HEAD request.
 req.head( '/some/path', callback )
 ```
 
-Parameter|Details
----------|-------
+__Parameters__
+
+Name|Details
+----|:------
 path|The URI path that is appended to the `req.host` and `reg.port` address.
 callback|The method that is called when the request returns. The `evt` is the standard Corona SDK [network event object](https://docs.coronalabs.com/api/event/networkRequest/index.html).
+
+__Returns__
+
+Name|Details
+----|:------
+networkId|The request identifier. This can be used with [network.cancel( requestId )](https://docs.coronalabs.com/api/library/network/cancel.html).
